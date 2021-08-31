@@ -40,7 +40,7 @@ curl -sL https://github.com/stedolan/jq/releases/latest/download/jq-linux64 \
 jq --version
 
 echo "downloading task"
-curl -sSL https://github.com/go-task/task/releases/download/v${TASK}/task_linux_arm.tar.gz | \
+curl -sSL https://github.com/go-task/task/releases/download/v${TASK}/task_linux_amd64.tar.gz | \
   tar xz && mv task /usr/local/bin/task && chmod +x /usr/local/bin/task
 task --version
 
