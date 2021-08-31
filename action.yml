@@ -1,0 +1,15 @@
+name: 'CI tools'
+description: 'CI tools in docker'
+author: 'phantomnat'
+branding:
+  icon: 'command'
+  color: 'blue'
+inputs:
+  command:
+    description: 'command to run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
